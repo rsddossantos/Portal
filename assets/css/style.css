@@ -1,0 +1,339 @@
+body { 
+	margin:0;
+	font-family:arial;
+	font-size:12px;
+	background-color:#DDD;
+	background:linear-gradient(135deg,white,#DDD);
+}
+	
+.topo{
+	height:30px;
+	background-color:#333333; /*preto claro*/
+	color:white;
+}
+.topoint{
+	width:100%;
+	max-width:1040px;
+	height:30px;
+	margin:auto;
+}
+.topoleft{
+	width:50%;
+	height:30px;
+	float:left; /*alinhar a esquerda*/
+}
+.toporight{
+	width:50%;
+	height:28px;
+	float:right;
+	text-align:right;
+	margin-top:2px;
+}
+.topoleft ul{
+	margin:0;
+	padding:0;  /*essas duas opções é para tirar o espaçamento da lista e fazer ficar colada com a div topoleft*/
+	list-style:none;
+}
+.topoleft li {
+	height:30px;
+	line-height:30px; /*essas duas irão alinhas verticalmente o menu na div topoleft*/
+	float:left; /*colocando a lista deitada e alinhada a esquerda*/
+	margin-left:8px;
+	margin-right:8px;
+	font-size:14px;
+}
+.topoleft li a{
+	text-decoration:none;
+	color:white;
+	transition:all 0.3s linear;
+}
+.topoleft li :hover{
+	color:blue;
+}
+.topobusca {
+	width:110px;
+	height:26px;
+	outline:0; /*tira a borda azul quando clica*/
+}
+.toporight a{
+	float:right;
+}
+.toporight input{
+	float:right;
+	margin-right:4px;
+}
+.toporight img {
+	margin-right:4px;
+	background-color:white;
+}
+.topo2{
+	height:95px; 
+	color:#000;
+	background-color:white;
+}
+.topo2int{
+	width:100%;
+	max-width:1040px;
+	height:95px;
+	margin:auto;
+}
+.logo{
+	width:230px;
+	height:88px;
+	float:left;
+	margin-top:7px;
+}	
+.topo2 .banner{
+	width:650px;
+	height:80px;
+	float:right;
+	margin-top:7px;
+	background-color:#3db0f7;
+	
+}
+.menu{
+	height:40px;
+	background-color:#3db0f7;
+	
+}
+.menuint{
+	width:100%;
+	max-width:1040px;
+	height:40px;
+	margin:auto;
+}
+.menu ul{
+	margin:0;
+	padding:0;
+	list-style:none;
+}
+.menu li{
+	float:left;
+	height:40px;
+	line-height:40px;
+	padding-left:8px;
+	padding-right:8px;
+}
+.menu li:hover {
+	background-color:#87ceeb;
+}
+.menu li:hover .submenu{
+	display:block;
+}
+.menu a{
+	color:white;
+	text-decoration:none;
+}
+.submenu{
+	width:150px;
+	background-color:#3db0f7;
+	position:absolute;
+	display:none;
+}
+.submenuitem{
+	width:140px;
+	height:30px;
+	line-height:30px; /*alinhar no meio da div. Se tem 30 na div de fundo, as letras irão ocupar a div de forma centralizada*/
+	padding-left:10px;
+}
+.submenuitem:hover{
+	background-color:#87ceeb;
+}
+.ultimasnoticias{
+	height:40px;
+}
+.ultimasnoticiasint{
+	width:100%;
+	max-width:1040px;
+	height:40px;
+	margin:auto;
+}
+.ultnoticiasarea{
+	height:28px;
+	background-color:white;
+	border:1px solid #ccc;
+	margin-top:10px;
+}
+.ultnoticiastitulo{
+	background-color:#3db0f7;
+	color:white;
+	height:28px;
+	line-height:28px; 
+	display:inline-block;
+	padding-left:10px;
+	padding-right:10px;
+	font-size:16px;
+	border-right:1px solid #ccc;
+}
+.ultnoticiasnoticia{
+	color:black;
+	height:28px;
+	line-height:28px;
+	display:inline-block;
+	padding-left:5px;
+	font-size:13px;
+}
+.containerint{
+	width:100%;
+	max-width:1040px;
+	margin:auto;
+	background-color:gray;
+}
+.leftside{
+	width:753px;
+	float:left;
+}
+.rightside{
+	width:275px;
+	min-height:200px;
+	float:right;
+	margin-left:12px;
+}
+.widget{
+	border:1px solid #ccc;
+	background-color:white;
+	margin-bottom:10px;
+}
+.widget_titulo{
+	height:30px;
+	line-height:30px;
+	background-color:#DDD;
+	border-bottom:1px solid #ccc;
+	padding-left:5px;
+	font-size:14px;
+}
+.widget_conteudo{
+	text-align:center;
+	padding-top:5px;
+	padding-bottom:5px;
+}
+.noticia_item{
+	font-size:14px;
+	margin:0px 10px;
+	padding:10px 0px;
+	text-align:left;
+	border-bottom:1px solid #CCC;
+}
+.noticia_item a{
+	text-decoration:none;
+	color:black;
+}
+.slideshow{
+	height:335px;
+	background-color:#CCC;
+	overflow:hidden; /*quando passar do tamanho dela, vai esconder. "scroll" vai aparecer barra de rolagem e "auto" esconde o scroll e só aparece ele quando aumentar o tamanho*/
+	margin-bottom:20px;
+}
+.slideshowarea{
+	width:100000px; /*pre definir um tamanho inatingível irá fazer com que os slides sejam colocados imediatamente um após o outro e assim numa mudança transitiva as fotos "correm" uma do lado da outra.*/
+	height:335px; /* a largura não pode ser definida porque será responsivo*/
+	background-color:#000; 
+	transition:all 1s;
+}
+.slide{
+	height:335px;
+	float:left; /*alinha os slides um ao lado do outro, para que só exiba um de cada vez*/
+	background-repeat:no-repeat;
+	background-position:center;
+	background-size:cover;	
+	box-shadow: inset 67px -64px 82px -9px rgba(0,0,0,0.69);
+	--box-shadow: inset 0px -200px 102px -137px rgba(0,0,0,0.97);
+}
+.slideinfo{
+	height:50px;
+	margin-top:285px;	
+	--background-color:white;
+}
+.slideinfo_titulo{
+	font-size:20px;
+	font-weight: bold;
+	color:white;
+	padding-top:5px;
+	padding-left:5px;
+	padding-right:5px;
+	text-shadow: black 0.1em 0.1em 0.1em
+}
+.slideinfo_subtitulo{
+	font-size:17px;
+	line-height:20px;
+	font-weight: bold;
+	color:white;
+	padding-left:5px;
+	padding-right:5px;
+	text-shadow:0.1em 0.1em 0.5em #000;
+}
+.slidebolinhas{
+	position:absolute;
+	width:110px;
+	height:20px;
+	margin-left:5px;
+	margin-top:5px;
+}
+.bolinha{
+	width:8px;
+	height:8px;
+	float:left;
+	margin-right:12px;
+	cursor:pointer;
+	background-color:transparent;
+	border-radius:5px;
+	border:1px solid #FFF;
+	
+}
+.noticiaarea1{
+	width:430px;
+	height:420px;
+	float:left;
+}
+.noticiaarea2{
+	width:320px;
+	height:420px;
+	float:left;
+}
+.noticiaitem{
+	text-align:left;
+	height:88px;
+	margin-top:7px;
+	margin-bottom:14px;
+}
+.noticiaimg{
+	width:80px;
+	height:80px;
+	border:1px solid #CCC;
+	padding:3px;
+	float:left;
+}
+.noticiatitulo{
+	float:left;
+	margin-left:6px;
+	font-size:16px;
+	width:226px;
+}
+.noticiainfo{
+	font-size:12px;
+	margin-left:6px;
+	color:#999;
+	float:left;
+}
+.noticiabig{
+	margin-left:10px;
+}
+.noticiabig .noticiaimg{
+	width:384px;
+	height:222px;
+}
+.noticiabig .noticiaimg img{
+	width:384px;
+	height:222px;
+}
+.noticiabig .noticiatitulo{
+	width:384px;
+	font-size:30px;
+	padding-top:10px;
+}
+
+
+
+
+
+
